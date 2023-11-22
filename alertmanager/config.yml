@@ -1,0 +1,8 @@
+route:
+    receiver: 'alertmanager-bot'
+
+receivers:
+- name: 'alertmanager-bot'
+  webhook_configs:
+  - send_resolved: true
+    url: 'http://176.126.103.39:8080/'
